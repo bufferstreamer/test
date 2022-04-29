@@ -44,11 +44,14 @@
     })
 </script>
 
+<div class="simpleLogo" style="width: 200px; padding-bottom: 0;">
+    <a href="${contextPath}"><img src="img/site/simpleLogo.png"></a>
+</div>
 
-<form method="post" action="foreregister" class="registerForm">
+<form method="post" action="foreregister" class="registerForm" style="padding-left: 250px; padding-top: 10px;  " >
 
 
-    <div class="registerDiv">
+    <div class="registerDiv" style="background-image: url('http://how2j.cn/tmall/img/site/loginBackground.png') ; background-repeat: no-repeat; background-size:1450px 800px ;  width: 1600px; height: 1000px;" >
         <div class="registerErrorMessageDiv">
             <div class="alert alert-danger" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
@@ -57,31 +60,27 @@
         </div>
 
 
-        <table class="registerTable" align="center">
+        <table class="registerTable"  style="margin-left: 880px; margin-top: 100px; background: white; width: 500px; height: 600px; table-layout:fixed"   >
             <tr>
-                <td class="registerTip registerTableLeftTD">设置会员名</td>
+                <td class="registerTip registerTableLeftTD" style="font-size: 14px; text-align: center" >注册</td>
                 <td></td>
             </tr>
-            <tr>
-                <td class="registerTableLeftTD">登陆名</td>
+            <tr style="width: 500px;height: 100px; padding: 0; margin: 0;" >
+                <td class="registerTableLeftTD" style="width: 100px; padding: 0;margin: 0;"   >登陆名</td>
                 <td class="registerTableRightTD"><input id="name" name="name" placeholder="会员名一旦设置成功，无法修改"></td>
             </tr>
             <tr>
-                <td class="registerTip registerTableLeftTD">设置登陆密码</td>
-                <td class="registerTableRightTD">登陆时验证，保护账号信息</td>
-            </tr>
-            <tr>
-                <td class="registerTableLeftTD">登陆密码</td>
+                <td class="registerTableLeftTD" style="width: 100px; padding: 0;margin: 0;" >登陆密码</td>
                 <td class="registerTableRightTD"><input id="password" name="password" type="password"
                                                         placeholder="设置你的登陆密码"></td>
             </tr>
             <tr>
-                <td class="registerTableLeftTD">密码确认</td>
+                <td class="registerTableLeftTD" style="width: 100px; padding: 0;margin: 0;" >密码确认</td>
                 <td class="registerTableRightTD"><input id="repeatpassword" type="password" placeholder="请再次输入你的密码">
                 </td>
             </tr>
             <tr>
-                <td class="registerTableLeftTD">用户类型</td>
+                <td class="registerTableLeftTD" style="width: 100px; padding: 0;margin: 0;" >用户类型</td>
                 <td class="registerTableRightTD">
                     <select name="userType" id="userType">
                         <option value="0" selected>请选择用户类型</option>

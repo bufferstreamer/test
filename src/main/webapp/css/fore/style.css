@@ -1025,7 +1025,8 @@ span.productReviewTopReviewLinkNumber {
 }
 
 div.productDetailImagesPart img {
-	display: block; margin 20px 0px;
+	display: block;
+	margin: 20px 0px;
 	width: 790px;
 }
 

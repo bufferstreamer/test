@@ -35,7 +35,16 @@
 
 <head>
     <base href="<%=basePath%>">
+    <style >
+        #loginBackgroundImg{
+            width: 1500px;
+            height: 780px;
+        }
+    </style>
 </head>
+<body>
+
+
 <div id="loginDiv" style="position: relative">
 
     <div class="simpleLogo">
@@ -43,10 +52,10 @@
     </div>
 
 
-    <%--	<img id="loginBackgroundImg" class="loginBackgroundImg" src="img/site/loginBackground.png">--%>
+    <img id="loginBackgroundImg" class="loginBackgroundImg" size="500px 600px" src="http://how2j.cn/tmall/img/site/loginBackground.png">
 
-    <form class="loginForm" action="forelogin" method="post">
-        <div id="loginSmallDiv" class="loginSmallDiv">
+    <form class="loginForm" action="forelogin" method="post" >
+        <div id="loginSmallDiv" class="loginSmallDiv" style="left: 1300px; top: 300px; width: 400px; height: 450px;" >
             <div class="loginErrorMessageDiv">
                 <div class="alert alert-danger">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
@@ -76,18 +85,16 @@
                 <option value="4">管理员</option>
             </select>
             <input type="checkbox" name="un-login" value="1"
-                   style="width: 16px;height: 16px;border: 1px solid #D0D0D0;border-radius: 2px;">
+                   style="width: 12px;height: 12px;border: 1px solid #D0D0D0;border-radius: 2px;">
             <label style="font-size: 14px;color: #9095A2;line-height: 18px;">十天内免登录</label>
-
             <div>
                 <a class="notImplementLink" href="#nowhere">忘记登录密码</a>
                 <a href="registerPage" class="pull-right">免费注册</a>
             </div>
             <div style="margin-top:20px">
-                <button class="btn btn-block redButton" type="submit">登录</button>
+                <button class="btn btn-block redButton" type="submit"  >登录</button>
             </div>
         </div>
     </form>
-
-
-</div>	
+</div>
+</body>

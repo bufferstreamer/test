@@ -60,6 +60,10 @@
     </script>
 
     <style>
+        /**{*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*}*/
         .title, h6 {
             font-family: "黑体";
         }
@@ -83,33 +87,28 @@
 <body>
 
 <!-- main -->
-<div data-vide-bg="lib/video/Ipad">
+<div data-vide-bg="lib/video/Ipad" style="width: 100%; height: 100%" >
     <div class="center-container">
         <!--header-->
-        <div class="header-w3l">
+        <div class="header-w3l" style="padding-top: 200px">
             <h1>集采商城后台管理系统</h1>
         </div>
         <!--//header-->
-        <div class="main-content-agile">
-            <div class="sub-main-w3">
+        <div class="main-content-agile" style="width: 1000px; height: 600px; " >
+            <div class="sub-main-w3" style="left: 450px; "  >
                 <div class="wthree-pro">
                     <h2>Login Here</h2>
                 </div>
                 <form id="login" action="adminLogin" method="post" >
                     <input placeholder="用户名" name="name" id="username" class="user" type="text" required="">
-                    <span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span><br><br>
+                    <span class="icon1" style="alignment: center ;padding-top: 12px; left:210px;" ><i class="fa fa-user" aria-hidden="true"></i></span><br><br>
                     <input placeholder="密码" name="password" id="password" class="pass" type="password" required="">
-                    <span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span><br><br>
-
-
+                    <span class="icon2" style="padding-top: 48px; left:210px;" ><i class="fa fa-unlock" aria-hidden="true"></i></span><br><br>
                     <div class="sub-w3l">
                         <div class="right-w3l">
-                            <input id="loginButton" type="submit" class="login" value="登录">
+                            <input id="loginButton" type="submit" class="login" value="登录" style="width: 76px;height: 31px;">
                         </div>
                     </div>
-                    <%--                    <div style="margin-top:20px">--%>
-                    <%--                        <button class="btn btn-block redButton" type="submit">登录</button>--%>
-                    <%--                    </div>--%>
                 </form>
             </div>
         </div>
